@@ -10,4 +10,7 @@ window.onload = function () {
     jQuery('.navbar-menu-spoiler-title').click(function(){
         $(this).parents('.navbar-menu-spoiler-wrapper').toggleClass("active").find('.spoiler-body').slideToggle();
     })
+    jQuery('.footer-r1-spoiler-title').click(function(){
+        $(this).parents('.footer-r1-spoiler').toggleClass("active").find('.spoiler-body').slideToggle();
+    })
 }

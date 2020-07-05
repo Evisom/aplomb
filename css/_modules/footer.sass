@@ -1,0 +1,116 @@
+.footer-wrapper
+  width: 100%
+  height: 365px
+  padding-top: 40px
+.footer-r1-spoiler-title > img
+  display: none
+.footer
+  height: 100%
+  max-width: 1160px
+  margin: 0 auto
+
+.footer-r1
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: end
+  border-bottom: 1px solid #F2F2F2
+  padding-bottom: 42px
+
+.footer-r1-spoiler
+  width: 154px
+.footer-r1-spoiler-body-a
+  display: block
+  margin-top: 18px
+  font-weight: normal
+  font-size: 14px
+  color: #7c7c86
+.footer-r1-spoiler-title
+  font-weight: bold
+  font-size: 14px
+  line-height: 28px
+.footer-r1-contacts-phone
+  display: block
+  font-weight: bold
+  font-size: 18px
+  line-height: 150%
+.footer-r1-contacts
+  text-align: right
+.footer-r1-contacts-link , .footer-r1-contacts-link > a
+  font-weight: bold
+  font-size: 14px
+  color: #00A3DD
+  margin-top: 18px
+.footer-r1-contacts-stores
+  display: none
+.footer-r2-text
+  max-width: 786px
+  font-size: 14px
+  line-height: 150%
+  color: #7C7C86
+.footer-r2-copyright
+  font-size: 14px
+  line-height: 150%
+  margin-top: 18px
+@media (max-width: $desktop)
+  .footer
+    padding: 0 32px
+@media (max-width: $laptop)
+  .footer-r1-contacts-phone
+    font-size: 14px
+
+@media (max-width: $tablet)
+  .footer-wrapper
+    padding-top: 5px
+  .footer
+    padding: 0 94px
+  .footer-r1
+    flex-direction: column
+    padding-bottom: 24px
+
+  .footer-r1-logo
+    display: none
+  .footer-r1-spoiler-body
+    display: none
+  .footer-r1-contacts
+    text-align: left
+    margin-top: 24px
+  .footer-r1-spoiler
+    width: 100%
+    padding: 20px 0
+    border-bottom: 1px solid #D9D9D9
+  .footer-r1-contacts-phone
+    font-size: 18px
+  .footer-r1-spoiler-title
+    font-size: 16px
+    display: flex
+    justify-content: space-between
+  .footer-r1-spoiler-title > img
+    display: block
+    transform: rotate(90deg)
+  .footer-r1-contacts-stores
+    display: flex
+    flex-direction: row
+  .footer-r1-contacts
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+  .footer-r1-contacts-stores > a
+    margin-left: 10px
+  .footer-r1-spoiler.active > .footer-r1-spoiler-body
+    display: block
+
+@media (max-width: 670px)
+  .footer-r1-contacts-stores
+    flex-direction: column
+  .footer-r1-contacts-stores > a
+    margin-bottom: 10px
+  .footer
+    padding: 0 20px
+
+@media (max-width: $phone)
+  .footer
+    padding: 0 20px
+  .footer-r1-contacts-stores
+    display: none
