@@ -4,6 +4,7 @@
   padding-top: 40px
 .footer-r1-spoiler-title > img
   display: none
+  z-index: -1
 .footer
   height: 100%
   max-width: 1160px
@@ -98,6 +99,8 @@
     width: 100%
   .footer-r1-contacts-stores > a
     margin-left: 10px
+  .footer-r1-spoiler.active > .footer-r1-spoiler-title > img
+    transform: rotate(270deg)
   .footer-r1-spoiler.active > .footer-r1-spoiler-body
     display: block
 
@@ -114,3 +117,5 @@
     padding: 0 20px
   .footer-r1-contacts-stores
     display: none
+  .footer-r2
+    padding-bottom: 32px

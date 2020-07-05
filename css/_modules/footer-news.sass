@@ -1,0 +1,108 @@
+.footer-news-wrapper
+  width: 100%
+  background: #C5EFFF
+  height: 188px
+
+.footer-news
+  height: 100%
+  max-width: 1160px
+  margin: 0 auto
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.footer-news-form
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.footer-news-form-input
+  max-width: 760px
+  width: 52vw
+  background: white
+  height: 60px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  padding: 32px 20px
+  span
+    font-weight: bold
+    font-size: 14px
+    color: #00A3DD
+.footer-news-form-input-el
+  outline: none
+  border: none
+
+.footer-news-title
+  font-weight: bold
+  font-size: 18px
+  line-height: 150%
+  width: 160px
+
+.footer-news-form-sm
+  display: flex
+  flex-direction: row
+  margin-left: 20px
+  align-items: center
+  a
+    margin-left: 40px
+
+@media (max-width: $desktop)
+  .footer-news
+    padding: 32px
+
+
+
+@media (max-width: $tablet)
+  .footer-news
+    padding: 0 94px
+  .footer-news-wrapper
+    height: 212px
+  .footer-news
+    flex-direction: column
+    justify-content: unset
+  .footer-news-title
+    width: 100%
+    font-size: 24px
+    margin-top: 43px
+  .footer-news-form
+    margin-top: 32px
+    width: 100%
+  .footer-news-form-input
+    height: 56px
+    padding: 26px 20px
+  .footer-news-form-sm
+    margin-left: 2px
+
+@media (max-width: 670px)
+  .footer-news-form-input-el
+    width: 50%
+  .footer-news-title
+    width: 319px
+    margin-top: 32px
+    font-weight: bold
+    font-size: 24px
+    line-height: 130%
+    text-align: center
+  .footer-news-wrapper
+    height: 268px
+  .footer-news
+    padding: 0 20px
+  .footer-news-form-input
+    width: 100%
+  .footer-news-form
+    flex-direction: column
+  .footer-news-form-sm > a
+    margin: 0
+  .footer-news-form-sm
+    margin-top: 32px
+    margin-left: 0
+    width: 138px
+    justify-content: space-between
+  .footer-news-form-input
+    height: 52px
+  .footer-news-form
+    margin-top: 24px
