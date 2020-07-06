@@ -19,7 +19,11 @@ window.onload = function () {
           $('.navbar-wrapper').attr('style' , 'background-color: white');
         } else {
             $('.navbar-wrapper').attr('style' , 'background-color: none');
-
         }
     });
+    if ($(".element-wrapper.advantages-wrapper") && $( window ).width() < 466) {
+        $('.element.advantages').flickity({
+            prevNextButtons: false
+        });
+    }
 }

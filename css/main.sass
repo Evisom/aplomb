@@ -10,10 +10,23 @@ a
   text-decoration: none
   color: initial
 
+.element-wrapper
+  width: 100%
+.element
+  max-width: 1160px
+  height: 100%
+  margin: auto
+
+@media (max-width: $desktop)
+  .element-wrapper
+    padding-left: 30px
+    padding-right: 30px
+
 @import "_modules/devpage"
 @import "_modules/navbar"
 @import "_modules/footer"
 @import "_modules/footer-news"
 @import "_modules/footer-moreinfo"
 @import "_modules/header"
+@import "_modules/advantages"
 
