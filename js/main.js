@@ -29,4 +29,8 @@ window.onload = function () {
     $('.main-block-lessons-slider-container').flickity({
         prevNextButtons: false
     });
+    $('.coming-courses-slider').flickity({
+        prevNextButtons: false,
+        wrapAround: true
+    });
 }

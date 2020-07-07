@@ -8,9 +8,7 @@
                 a.header-button-blue(href="#") Расписание занятий
                 a.header-link(href="#") Расписание курсов
         img.header-main-img(src="/img/photo/main-header.png")
-
 != partial("/_templates/advantages")
-
 .element-wrapper
     .element.main-block-about
         .vertical-line
@@ -22,8 +20,6 @@
             .main-block-about-info-title Система Aplomb
             .main-block-about-info-text Мы помогаем развивать гибкость и силу тела для достижения профессиональных успехов детям и взрослым. Делаем растяжку комфортнее, развиваем выносливость без перенапряжения даже тем, кто никогда не занимался. Мы объясняем через движения и ощущения, чтобы вашему телу стало понятно
             a.main-block-about-info-link(href="#") Подробнее о системе
-
-
 .element-wrapper(style="background: #EDFAFF;")
     .element.main-block-lessons
         .vertical-line
@@ -35,7 +31,7 @@
                 .main-block-lessons-info-buttons
                     a.header-button-blue(href="#") Расписание занятий
         .main-block-lessons-slider
-            .main-block-lessons-slider-container
+            .main-block-lessons-slider-container#MainLessonsSlider
                 .main-block-lessons-slider-container-element
                     img.main-block-lessons-slider-container-element-photo(src="/img/photo/main-slider.png")
                     .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
@@ -49,9 +45,8 @@
                     .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
                     .main-block-lessons-slider-container-element-name Елена, бухгалтер
             .main-block-lessons-slider-control
-                img.main-block-lessons-slider-control-left(src="/img/icon/chevron.svg")
-                img.main-block-lessons-slider-control-right(src="/img/icon/chevron.svg")
-
+                img.main-block-lessons-slider-control-left(src="/img/icon/chevron.svg" onclick="$('#MainLessonsSlider').flickity( 'previous' )")
+                img.main-block-lessons-slider-control-right(src="/img/icon/chevron.svg" onclick="$('#MainLessonsSlider').flickity( 'next' )")
 .element-wrapper(style="background: #FFF0F0;")
     .element.main-block-lessons.main-block-lessons-reverse
         .vertical-line
@@ -65,7 +60,7 @@
                     a.header-button-blue(href="#") Расписание занятий
                     a.header-link(href="#") Или выберите другой курс
         .main-block-lessons-slider
-            .main-block-lessons-slider-container
+            .main-block-lessons-slider-container#MainLessonsSliderReverse
                 .main-block-lessons-slider-container-element
                     img.main-block-lessons-slider-container-element-photo(src="/img/photo/main-slider.png")
                     .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
@@ -79,7 +74,34 @@
                     .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
                     .main-block-lessons-slider-container-element-name Елена, бухгалтер
             .main-block-lessons-slider-control
-                img.main-block-lessons-slider-control-left(src="/img/icon/chevron.svg")
-                img.main-block-lessons-slider-control-right(src="/img/icon/chevron.svg")
+                img.main-block-lessons-slider-control-left(src="/img/icon/chevron.svg" onclick="$('#MainLessonsSliderReverse').flickity( 'previous' )")
+                img.main-block-lessons-slider-control-right(src="/img/icon/chevron.svg" onclick="$('#MainLessonsSliderReverse').flickity( 'next' )")
+.coming-courses
+    .coming-courses-title Ближайшие курсы
+    .coming-courses-slider
+        .coming-courses-slider-element(style="background: #DBD7F8")
+            .coming-courses-slider-element-title Шпагатный интенсив
+            .coming-courses-slider-element-text Модуль предполагает расширенное изучение направлений методики, с большим количеством упражнений и усложнений
+            .coming-courses-slider-element-date 21–23 августа в Москве
+        .coming-courses-slider-element(style="background: #BCD2A0")
+            .coming-courses-slider-element-title Шпагатный интенсив
+            .coming-courses-slider-element-text Модуль предполагает расширенное изучение направлений методики, с большим количеством упражнений и усложнений
+            .coming-courses-slider-element-date 21–23 августа в Москве
+        .coming-courses-slider-element(style="background: #CDE7F8")
+            .coming-courses-slider-element-title Шпагатный интенсив
+            .coming-courses-slider-element-text Модуль предполагает расширенное изучение направлений методики, с большим количеством упражнений и усложнений
+            .coming-courses-slider-element-date 21–23 августа в Москве
+        .coming-courses-slider-element(style="background: #DBD7F8")
+            .coming-courses-slider-element-title Шпагатный интенсив
+            .coming-courses-slider-element-text Модуль предполагает расширенное изучение направлений методики, с большим количеством упражнений и усложнений
+            .coming-courses-slider-element-date 21–23 августа в Москве
+        .coming-courses-slider-element(style="background: #BCD2A0")
+            .coming-courses-slider-element-title Шпагатный интенсив
+            .coming-courses-slider-element-text Модуль предполагает расширенное изучение направлений методики, с большим количеством упражнений и усложнений
+            .coming-courses-slider-element-date 21–23 августа в Москве
+        .coming-courses-slider-element(style="background: #CDE7F8")
+            .coming-courses-slider-element-title Шпагатный интенсив
+            .coming-courses-slider-element-text Модуль предполагает расширенное изучение направлений методики, с большим количеством упражнений и усложнений
+            .coming-courses-slider-element-date 21–23 августа в Москве
 != partial("/_templates/footer-moreinfo")
 != partial("/_templates/footer")
