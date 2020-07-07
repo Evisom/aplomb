@@ -116,6 +116,7 @@
     font-weight: bold
     font-size: 44px
     line-height: 110%
+    max-width: 560px
   @media (max-width: $phone)
     font-size: 32px
 .main-block-lessons-info-text
@@ -123,13 +124,26 @@
   line-height: 150%
   margin-top: 16px
   @media ( max-width: $tablet )
+    max-width: 580px
     margin-top: 0
 .main-block-lessons-info-buttons
   margin-top: 50px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  width: 90%
+  @media ( max-width: $laptop )
+    width: 100%
+    .header-link
+      margin-left: 16px
   @media ( max-width: $tablet )
+    flex-direction: column
+    align-items: flex-end
     margin-top: 0
   @media ( max-width: $phone )
     margin-top: 40px
+    align-items: flex-start
 .main-block-lessons-slider-control
   display: flex
   flex-direction: row
@@ -169,3 +183,27 @@ img.main-block-lessons-slider-container-element-photo
     justify-content: unset
     align-items: unset
     margin-bottom: 56px
+
+@media ( min-width: $desktop )
+  .main-block-lessons-info
+    width: 47%
+
+
+.element.main-block-lessons.main-block-lessons-reverse
+  flex-direction: row-reverse
+  justify-content: space-between
+  @media ( max-width: $desktop )
+    .main-block-lessons-info
+      margin-left: 16px
+      margin-right: 16px
+    .main-block-lessons-info
+      width: calc(100vw - 60px - 500px )
+  @media ( max-width: $tablet )
+    flex-direction: column
+    padding-bottom: 36px
+    .main-block-lessons-info
+      width: 100%
+    .header-link
+      display: none
+    .main-block-lessons-info
+      margin-left: 0
