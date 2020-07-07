@@ -45,4 +45,127 @@
   margin-left: 40px
   flex: 1
 
+.element.main-block-lessons
+  height: 650px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  padding-top: 93px
+  position: relative
+  @media ( max-width: $tablet )
+    flex-direction: column
+    height: auto
+    padding-top: 55px
+    justify-content: unset
+    padding-bottom: 75px
+  .flickity-page-dots
+    bottom: 12px
+    li
+      width: 4px
+      height: 4px
 
+.main-block-lessons-slider
+  @media ( max-width: $tablet )
+    position: relative
+    width: 319px
+    margin: auto
+.main-block-lessons-slider
+  position: relative
+.main-block-lessons-slider-container , .main-block-lessons-slider-container > div
+  width: 464px !important
+  height: 500px !important
+  margin: auto
+  @media ( max-width: $tablet )
+    width: 319px !important
+    height: 380px !important
+
+.main-block-lessons-slider-container-element
+  text-align: center
+  margin-right: 32px
+.main-block-lessons-slider-container-element-quote
+  font-weight: bold
+  width: 351px
+  font-size: 18px
+  line-height: 150%
+  margin-top: 27px
+  margin-left: auto
+  margin-right: auto
+  @media (max-width: $phone)
+    margin-top: 32px
+    font-size: 14px
+    width: 320px
+.main-block-lessons-slider-container-element-name
+  font-size: 14px
+  line-height: 150%
+  margin-top: 4px
+.main-block-lessons-info-subtitle
+  text-transform: uppercase
+  font-weight: 600
+  font-size: 14px
+  line-height: 150%
+  margin-top: 25px
+  @media (max-width: $phone)
+    margin-top: 12px
+.main-block-lessons-info-title
+  font-weight: bold
+  font-size: 44px
+  line-height: 110%
+  margin-top: 30px
+  @media (max-width: $tablet)
+    margin-top: 8px
+    font-weight: bold
+    font-size: 44px
+    line-height: 110%
+  @media (max-width: $phone)
+    font-size: 32px
+.main-block-lessons-info-text
+  font-size: 14px
+  line-height: 150%
+  margin-top: 16px
+  @media ( max-width: $tablet )
+    margin-top: 0
+.main-block-lessons-info-buttons
+  margin-top: 50px
+  @media ( max-width: $tablet )
+    margin-top: 0
+  @media ( max-width: $phone )
+    margin-top: 40px
+.main-block-lessons-slider-control
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  position: absolute
+  width: 100%
+  bottom: 145px
+  @media ( max-width: $tablet )
+    bottom: 75px
+  @media ( max-width: $phone )
+    display: none
+.main-block-lessons-slider-control-left
+  transform: rotate(180deg)
+  @media ( max-width: $tablet )
+    left: -48px
+    position: absolute
+.main-block-lessons-slider-control-right
+  @media ( max-width: $tablet )
+    position: absolute
+    right: -48px
+img.main-block-lessons-slider-container-element-photo
+  @media ( max-width: $tablet )
+    width: 319px
+    height: auto
+
+.main-block-lessons-info-container
+  @media ( max-width: $tablet )
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    margin-top: 16px
+    margin-bottom: 80px
+  @media ( max-width: $phone )
+    flex-direction: column
+    justify-content: unset
+    align-items: unset
+    margin-bottom: 56px

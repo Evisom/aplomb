@@ -26,4 +26,7 @@ window.onload = function () {
             prevNextButtons: false
         });
     }
+    $('.main-block-lessons-slider-container').flickity({
+        prevNextButtons: false
+    });
 }

@@ -16,11 +16,41 @@
         .vertical-line
         .main-block-about-photo
             img.main-block-about-photo-el(src="/img/photo/main-about.png")
-            img.main-block-about-photo-play(src="/img/icon/play.svg")
+            a.main-block-about-photo-play(href="#")
+                img(src="/img/icon/play.svg")
         .main-block-about-info
             .main-block-about-info-title Система Aplomb
             .main-block-about-info-text Мы помогаем развивать гибкость и силу тела для достижения профессиональных успехов детям и взрослым. Делаем растяжку комфортнее, развиваем выносливость без перенапряжения даже тем, кто никогда не занимался. Мы объясняем через движения и ощущения, чтобы вашему телу стало понятно
             a.main-block-about-info-link(href="#") Подробнее о системе
+
+
+.element-wrapper(style="background: #EDFAFF;")
+    .element.main-block-lessons
+        .vertical-line
+        .main-block-lessons-info
+            .main-block-lessons-info-subtitle шпагат с нуля
+            .main-block-lessons-info-title Занятия для гибкости и позитива
+            .main-block-lessons-info-container
+                .main-block-lessons-info-text Для новичков и тех, кому важен результат!
+                .main-block-lessons-info-buttons
+                    a.header-button-blue(href="#") Расписание занятий
+        .main-block-lessons-slider
+            .main-block-lessons-slider-container
+                .main-block-lessons-slider-container-element
+                    img.main-block-lessons-slider-container-element-photo(src="/img/photo/main-slider.png")
+                    .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
+                    .main-block-lessons-slider-container-element-name Елена, бухгалтер
+                .main-block-lessons-slider-container-element
+                    img.main-block-lessons-slider-container-element-photo(src="/img/photo/main-slider.png")
+                    .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
+                    .main-block-lessons-slider-container-element-name Елена, бухгалтер
+                .main-block-lessons-slider-container-element
+                    img.main-block-lessons-slider-container-element-photo(src="/img/photo/main-slider.png")
+                    .main-block-lessons-slider-container-element-quote «Для меня открылся целый мир общения с телом...»
+                    .main-block-lessons-slider-container-element-name Елена, бухгалтер
+            .main-block-lessons-slider-control
+                img.main-block-lessons-slider-control-left(src="/img/icon/chevron.svg")
+                img.main-block-lessons-slider-control-right(src="/img/icon/chevron.svg")
 
 != partial("/_templates/footer-moreinfo")
 != partial("/_templates/footer")
