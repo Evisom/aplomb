@@ -16,9 +16,9 @@ window.onload = function () {
     $(window).scroll(function(){
         var scrollPos = $(document).scrollTop();
         if (scrollPos > 5) {
-          $('.navbar-wrapper').attr('style' , 'background-color: white');
+          $('.navbar-wrapper').attr('style' , 'background-color: white; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);');
         } else {
-            $('.navbar-wrapper').attr('style' , 'background-color: none');
+            $('.navbar-wrapper').attr('style' , 'background-color: none; box-shadow: none');
         }
     });
     if ($(".element-wrapper.advantages-wrapper") && $( window ).width() < 466) {

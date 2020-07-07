@@ -10,6 +10,9 @@ a
   text-decoration: none
   color: initial
 
+body
+  overflow-x: hidden
+
 .element-wrapper
   width: 100%
 .element
@@ -17,10 +20,23 @@ a
   height: 100%
   margin: auto
 
+.vertical-line
+  height: 80px
+  width: 1px
+  background: black
+  position: absolute
+  left: 50%
+  right: 50%
+  top: -40px
 @media (max-width: $desktop)
   .element-wrapper
-    padding-left: 30px
-    padding-right: 30px
+    padding-left: 32px
+    padding-right: 32px
+
+@media (max-width: $phone)
+  .element-wrapper
+    padding-left: 20px
+    padding-right: 20px
 
 @import "_modules/devpage"
 @import "_modules/navbar"
@@ -29,4 +45,6 @@ a
 @import "_modules/footer-moreinfo"
 @import "_modules/header"
 @import "_modules/advantages"
+@import "_modules/main-block"
+
 
