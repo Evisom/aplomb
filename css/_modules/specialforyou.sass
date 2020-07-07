@@ -1,0 +1,59 @@
+.special-for-you
+  text-align: center
+  padding-bottom: 64px
+
+.special-for-you-title
+  font-weight: bold
+  font-size: 40px
+  line-height: 110%
+
+.special-for-you-subtitle
+  font-size: 16px
+  line-height: 150%
+  margin-top: 16px
+  max-width: 960px
+
+.special-for-you-tabs-panel
+  display: flex
+  flex-direction: row
+  width: fit-content
+  margin-left: auto
+  margin-right: auto
+  li
+    padding: 25px
+  .ui-state-active
+    border-bottom: 3px solid #F1574B
+    path
+      fill: black
+.special-for-you-tabs-panel-wrapper
+  border-bottom: 1px solid #E9EAEA
+  margin-top: 12px
+
+.special-for-you-tabs-container
+  margin-top: 20px
+  width: 860px
+  margin-left: auto
+  margin-right: auto
+
+.special-for-you-tabs-container-tab-info
+  font-size: 16px
+  line-height: 150%
+.special-for-you-tabs-container-tab-info-title
+  font-weight: bold
+
+.special-for-you-tabs-container-tab
+  display: flex
+  flex-direction: row
+  margin-bottom: 34px
+  padding-bottom: 28px
+.special-for-you-tabs-container-tab-info
+  text-align: left
+  margin-left: 38px
+
+@media ( max-width:  $laptop )
+  .special-for-you-tabs-container
+    width: 100%
+
+@media ( max-width:  $tablet )
+  .element-wrapper.special-for-you-wrapper
+    display: none

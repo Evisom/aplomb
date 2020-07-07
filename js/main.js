@@ -33,4 +33,7 @@ window.onload = function () {
         prevNextButtons: false,
         wrapAround: true
     });
+    $( function() {
+        $( "#tabs" ).tabs();
+    } );
 }
