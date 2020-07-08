@@ -33,6 +33,30 @@ window.onload = function () {
         prevNextButtons: false,
         wrapAround: true
     });
+    $('.reviews-slider-container').flickity({
+        prevNextButtons: false,
+        cellAlign: 'left',
+        pageDots: false,
+        imagesLoaded: true,
+        // draggable: false,
+        cellSelector: '.reviews-slider-container-element',
+        contain: false
+    });
+    $('.reviews-slider-container').on( 'change.flickity', function( event, index ) {
+        $('.reviews-slider-container').flickity('resize')
+    })
+
+    $("#ReviewsNext").click( () => {
+        $('.reviews-slider-container').flickity("next")
+        // $('.reviews-slider-container').flickity('reposition')
+        $('.reviews-slider-container').flickity('resize')
+
+
+    })
+    $("#ReviewsPrev").click( () => {
+        $('.reviews-slider-container').flickity("previous")
+        $('.reviews-slider-container').flickity('resize')
+    })
     $( function() {
         $( "#tabs" ).tabs();
     } );

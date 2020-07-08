@@ -1,0 +1,160 @@
+.reviews-slider-wrapper
+  background: #F7F7F7
+  height: 774px
+  @media (max-width: $tablet)
+    height: 494px
+  @media (max-width: 700px)
+    height: 778px
+.reviews-slider
+  text-align: center
+  padding-top: 96px
+  @media (max-width: $tablet)
+    padding-top: 64px
+  @media (max-width: 700px)
+    padding-top: 56px
+  .flickity-viewport
+    height: 550px !important
+
+
+.reviews-slider-container
+  height: 550px
+  position: relative
+  display: inherit
+  margin-left: calc( (50vw - 600px) )
+  margin-top: 40px
+  @media (max-width: $desktop)
+    margin-left: calc(50vw - 374px )
+  @media (max-width: 730px)
+    margin-left: 20px
+.reviews-slider-title
+  font-weight: bold
+  font-size: 40px
+  @media (max-width: $tablet)
+    font-size: 32px
+  @media (max-width: 700px)
+    font-size: 24px
+    text-align: left
+    padding-left: 20px
+.reviews-slider-subtitle
+  font-size: 16px
+  margin-top: 16px
+  line-height: 150%
+  @media (max-width: 700px)
+    text-align: left
+    font-size: 14px
+    padding-left: 20px
+
+.reviews-slider-container-element
+  height: 325px
+  width: 260px
+  margin-left: 40px
+  .reviews-slider-container-element-info
+    display: none
+  @media (max-width: $desktop)
+    height: 179px
+    width: 143px
+    margin-left: 20px
+    img
+      height: 179px
+      width: 143px
+  @media (max-width: 700px)
+    width: 142px
+    height: 178px
+    margin-left: 16px
+    img
+      width: 142px
+      height: 178px
+.reviews-slider-container-element.is-selected
+  display: flex
+  flex-direction: row
+  position: relative
+  width: 760px
+  justify-content: flex-end
+  img
+    height: 450px !important
+    width: 360px !important
+  @media (max-width: $desktop)
+    height: 275px
+    width: 420px
+    img
+      width: 220px !important
+      height: 275px !important
+  @media (max-width: 700px)
+    width: 260px
+    height: 289px
+    img
+      width: 260px !important
+      height: 289px!important
+  .reviews-slider-container-element-info
+    position: absolute
+    display: block
+    right: 295px
+    z-index: 1
+    @media (max-width: $desktop)
+      width: 260px
+      right: 140px
+    @media (max-width: 700px)
+      top: 320px
+      //width: 100%
+      //right: 0px
+      width: calc( 100vw - 40px )
+      right: calc(( 100vw - 300px ) / -1)
+.reviews-slider-container-element-info-quote
+  font-weight: bold
+  font-size: 30px
+  line-height: 110%
+  width: 460px
+  text-align: left
+  @media (max-width: $desktop)
+    font-size: 16px
+    line-height: 150%
+    width: 220px
+  @media (max-width: 700px)
+    width: 100%
+    font-size: 18px
+    line-height: 150%
+.reviews-slider-container-element-info-name
+  font-size: 16px
+  line-height: 150%
+  margin-top: 28px
+  text-align: left
+  @media (max-width: $desktop)
+    font-size: 14px
+  @media (max-width: 700px)
+    margin-top: 18px
+.reviews-slider-container-element-info-about
+  font-size: 16px
+  color: #828282
+  text-align: left
+  @media (max-width: $desktop)
+    font-size: 14px
+
+.reviews-slider-container-controls
+  position: absolute
+  top: 297px
+  z-index: 1
+  left: 1004px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  width: 150px
+  @media (max-width: 700px)
+    display: none
+  @media (max-width: $desktop)
+    top: 156px
+    left: 527px
+    width: 129px
+  button
+    width: 56px
+    height: 56px
+    background: #F7F7F7
+    border: none
+    //border: 1px solid black
+    outline: none
+    display: flex
+    justify-content: center
+    align-items: center
+  button:first-child
+    img
+      transform: rotate(180deg)
+
