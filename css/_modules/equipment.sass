@@ -1,0 +1,127 @@
+.equipment
+  height: 768px
+  padding-top: 80px
+  @media (max-width: $tablet)
+    padding-top: 56px
+    height: 600px
+  @media (max-width: $phone)
+    height: 545px
+.equipment-title
+  text-align: center
+  font-weight: bold
+  font-size: 40px
+  line-height: 110%
+  @media (max-width: $tablet)
+    font-size: 32px
+  @media (max-width: $phone)
+    font-size: 24px
+.equipment-container-card
+  position: relative
+
+.equipment-container-card-info
+  position: absolute
+  top: 260px
+  left: 0
+  right: 0
+  @media (max-width: $phone)
+    background: white
+    top: 200px
+    height: auto
+    text-align: left
+
+
+.equipment-container-card-photo
+  margin-top: 44px
+  @media (max-width: $phone)
+    width: 90px
+
+.equipment-container
+  margin-top: 48px
+  width: 100%
+  overflow-x: scroll
+  overflow-y: hidden
+  white-space: nowrap
+  @media (max-width: $tablet)
+    margin-top: 36px
+
+.equipment-container-card
+  height: 414px
+  width: 260px
+  background: #F7F7F7
+  display: inline-block
+  text-align: center
+  @media (max-width: $phone)
+    height: 370px
+    width: 152px
+.equipment-container-card:not(:last-child)
+  margin-right: 40px
+  @media (max-width: $tablet)
+    margin-right: 20px
+  @media (max-width: $phone)
+    margin-right: 16px
+.equipment-container-card:first-child
+  @media (max-width: $desktop)
+    margin-left: 36px
+  @media (max-width: $phone)
+    margin-left: 20px
+.equipment-container-card-info-title
+  font-weight: bold
+  font-size: 18px
+  line-height: 150%
+  @media (max-width: $phone)
+    font-size: 14px
+    padding-top: 12px
+
+.equipment-container-card-info-specs
+  margin-top: 25px
+  margin-left: 42px
+  margin-right: 42px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  font-size: 14px
+  img
+    margin-right: 10px
+  @media (max-width: $phone)
+    flex-direction: column
+    margin-left: 0
+    margin-top: 8px
+    align-items: baseline
+    font-size: 14px
+
+.equipment-container-card-info-specs-level
+  padding-right: 10px
+  margin-right: 11px
+  border-right: 1px solid #BDBDBD
+  @media (max-width: $phone)
+    border: none
+    margin-bottom: 12px
+    img
+      margin-right: 17px
+.equipment-container-card-info-rating
+  display: none
+  @media (max-width: $phone)
+    display: flex
+    flex-direction: row
+    margin-top: 12px
+.equipment-container-card-info-price
+  font-weight: bold
+  font-size: 18px
+  margin-top: 32px
+  @media (max-width: $phone)
+    padding-bottom: 16px
+
+
+
+.element-wrapper.equipment-wrapper
+  padding-right: 0 !important
+  padding-left: 0 !important
+
+.equipment-container-card-info-rating-comment
+  margin-left: 14px
+  letter-spacing: -0.5px
+  color: #828282
+  font-size: 14px
+  img
+    margin-right: 4px
