@@ -69,4 +69,7 @@ window.onload = function () {
     $( function() {
         $( "#tabs" ).tabs();
     } );
+    $('.spoiler-title').click(function(){
+        $(this).parents('.spoiler').toggleClass("active").find('.spoiler-body')
+    })
 }

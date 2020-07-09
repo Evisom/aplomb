@@ -1,0 +1,69 @@
+.lessons-type-title
+  font-weight: bold
+  font-size: 40px
+  line-height: 110%
+  text-align: center
+  margin-bottom: 30px
+  @media (max-width: $tablet)
+    font-size: 24px
+    text-align: left
+    margin-left: 73px
+  @media (max-width: $phone)
+    margin-left: 0
+    margin-bottom: 24px
+.lessons-type
+  padding-top: 12px
+  padding-left: 20px
+  padding-right: 20px
+
+.spoiler.lessons-type-spoiler
+  max-width: 760px
+  margin-left: auto
+  margin-right: auto
+  padding-top: 16px
+  padding-bottom: 12px
+  border-bottom: 1px solid #E0E0E0
+  img
+    width: 20px
+    height: 20px
+  @media (max-width: $tablet)
+    max-width: 580px
+.spoiler-title
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+.spoiler-title.lessons-type-spoiler
+  font-weight: bold
+  font-size: 18px
+  line-height: 150%
+  span
+    margin-right: 1px
+    span
+      color: #00A3DD
+      margin-right: 4px
+  @media (max-width: $tablet)
+    font-size: 16px
+  @media (max-width: $tablet)
+    font-size: 14px
+.spoiler-body.lessons-type-body
+  margin-top: 30px
+  font-size: 14px
+  line-height: 150%
+  display: none
+  @media (max-width: $tablet)
+    margin-top: 12px
+.spoiler-body.lessons-type-body-p-title
+  font-weight: bold
+.spoiler-body.lessons-type-body-p:not(:first-child)
+  margin-top: 24px
+
+.spoiler.active
+  .spoiler-title
+    img
+      content: url("/img/icon/minus.svg")
+  .spoiler-body.lessons-type-body
+    display: block
+    margin-bottom: 12px
+.lessons-type-spoiler-first
+  border-top: 1px solid #E0E0E0
