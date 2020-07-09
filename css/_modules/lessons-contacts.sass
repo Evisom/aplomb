@@ -1,0 +1,94 @@
+.lessons-contacts
+  height: 400px
+  box-shadow: 0px 0px 30px rgba(0, 68, 92, 0.15)
+  margin-top: 60px
+  margin-bottom: 10px
+  display: flex
+  flex-direction: row
+  @media ( max-width: $phone )
+    flex-direction: column-reverse
+    box-shadow: none
+    align-items: center
+    height: auto
+.lessons-contact-info
+  height: 100%
+  width: 400px
+  padding: 40px
+  position: relative
+  background: white
+  @media ( max-width: $tablet )
+    padding-top: 40px
+    padding-left: 60px
+    padding-right: 40px
+    padding-bottom: 40px
+    width: 350px
+  @media ( max-width: $phone )
+    padding-bottom: 40px
+    padding-top: 29px
+    padding-left: 20px
+    padding-right: 20px
+    width: calc( 100vw - 40px )
+    box-shadow: 0px 0px 30px rgba(0, 68, 92, 0.15)
+    margin-top: -64px
+    z-index: 1
+    min-height: 410px
+
+.lessons-contact-map
+  height: 100%
+  width: calc(100% - 400px)
+  background-image: url("/img/background/map.png")
+  background-position: center
+  @media ( max-width: $tablet )
+    width: calc(100% - 350px)
+  @media ( max-width: $phone )
+    width: 100vw
+    height: 360px
+
+.lessons-contact-info-title
+  font-weight: bold
+  font-size: 20px
+  @media ( max-width: $phone )
+    font-size: 24px
+.lessons-contact-info-subtitle
+  font-size: 14px
+  margin-top: 8px
+  margin-bottom: 16px
+
+.lessons-contact-info-r
+  display: flex
+  flex-direction: row
+  align-items: baseline
+  margin-bottom: 16px
+  @media ( max-width: $tablet )
+    margin-bottom: 6px
+  @media ( max-width: $phone )
+    margin-bottom: 10px
+.lessons-contact-info-r-text
+  font-size: 14px
+  line-height: 150%
+.lessons-contact-info-r-ico
+  margin-right: 10px
+
+.lessons-contact-info-r-text
+  span:first-child
+    font-weight: bold
+  span:last-child
+    color: #7c7c86
+    display: block
+
+.lessons-contact-sm
+  position: absolute
+  bottom: 40px
+  left: 40px
+  @media ( max-width: $tablet )
+    left: 84px
+    bottom: 32px
+  @media ( max-width: $phone )
+    left: calc( 50% - 70px)
+    bottom: 36px
+.lessons-contact-sm-el
+  margin-right: 40px
+
+.element-wrapper.leesons-contacts-wrapper
+  @media ( max-width: $phone )
+    padding: 0
