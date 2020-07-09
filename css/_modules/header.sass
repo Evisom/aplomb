@@ -26,8 +26,66 @@
   font-size: 14px
   line-height: 150%
 
+.header-title
+  padding-top: 144px
+  text-align: center
+  font-weight: bold
+  font-size: 44px
+  line-height: 110%
+  @media(max-width: $tablet)
+    padding-top: 80px
+    font-size: 24px
+    line-height: 130%
+
+.header-subtitle
+  font-size: 16px
+  line-height: 150%
+  text-align: center
+  max-width: 760px
+  margin-left: auto
+  margin-right: auto
+  margin-top: 16px
+  @media(max-width: $tablet)
+    display: none
+
+.header-lesson-buttons
+  width: 560px
+  height: 52px
+  background: #00A3DD
+  border-radius: 16500px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  position: absolute
+  left:  calc( 50% - 280px )
+  right: calc( 50% - 280px )
+  bottom: -26px
+  @media (max-width: 600px)
+    height: 70px
+    width: calc(100vw - 40px)
+    left: 20px
+    right: 20px
+    bottom: -35px
+.header-lesson-buttons-el
+  padding: 8px
+  width: 50%
+  font-weight: bold
+  font-size: 14px
+  line-height: 150%
+  text-align: center
+  color: white
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 16500px
 
 
+.header-lesson-buttons-active
+  background: white
+  color: black
+  border: 2px solid #00A3DD
 // MAIN PAGE HEADER
 
 .header-wrapper.header-main-wrapper
@@ -106,3 +164,20 @@
     width: 100%
     text-align: center
     margin-top: 8px
+
+
+.header-wrapper.header-lessons-wrapper
+  background-image: url("/img/background/lesson-studio-background.png")
+  background-repeat: no-repeat
+  background-position: bottom
+  background-size: cover
+  //@media(min-width: 1400px)
+    //background-size: 100%
+  @media(max-width: $tablet)
+    height: 190px
+    min-height: unset
+.header.header-lessons
+  position: relative
+  min-height: 420px
+  @media(max-width: $tablet)
+    min-height: unset
