@@ -1,0 +1,71 @@
+.lessons-reviews
+  margin-top: 12px
+  width: 1260px
+  height: 683px
+  background: #EDFAFF
+  margin-left: auto
+  margin-right: auto
+  padding-top: 96px
+  //width: 100%
+  @media ( max-width: 1280px)
+    width: 100%
+  @media ( max-width: $tablet)
+    padding-top: 56px
+    height: 640px
+  @media ( max-width: $phone)
+    padding-top: 48px
+    height: 672px
+  .flickity-viewport
+    width: 100%
+  .flickity-slider
+    margin-left: 20px !important
+  .flickity-page-dots
+    bottom: 60px
+    li
+      width: 4px
+      height: 4px
+.lessons-reviews-title
+  font-weight: bold
+  font-size: 36px
+  line-height: 110%
+  text-align: center
+  @media ( max-width: $tablet)
+    font-size: 24px
+    text-align: left
+    margin-left: 34px
+  @media ( max-width: $phone)
+    margin-left: 20px
+    font-size: 20px
+.lessons-reviews-slider
+  margin-top: 72px
+  width: 100%
+  overflow-x: scroll
+  display: flex
+  flex-direction: row
+  @media ( max-width: $phone)
+    overflow: hidden
+    margin-top: 49px
+    height: 550px
+.lessons-reviews-slider::-webkit-scrollbar
+  display: none
+.lessons-reviews-slider-element
+  margin-left: 48px
+  width: 255px
+  display: inline-block
+  flex-shrink: 0
+@media ( max-width: $phone)
+  .lessons-reviews-slider-element:first-child
+    margin-left: 20px
+.lessons-reviews-slider-element-name
+  font-weight: bold
+  font-size: 14px
+  line-height: 150%
+  margin-top: 28px
+.lessons-reviews-slider-element-review
+  font-size: 14px
+  line-height: 150%
+  margin-top: 12px
+  margin-bottom: 12px
+.lessons-reviews-slider-element-link
+  font-size: 12px
+  line-height: 19px

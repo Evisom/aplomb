@@ -11,12 +11,15 @@
   @media (max-width: $phone)
     margin-left: 0
     margin-bottom: 24px
-.lessons-type
+.lessons-type , .lessons-faq
   padding-top: 12px
   padding-left: 20px
   padding-right: 20px
 
-.spoiler.lessons-type-spoiler
+.spoiler.lessons-faq-spoiler
+  padding-top: 24px !important
+  padding-bottom: 24px !important
+.spoiler.lessons-type-spoiler , .spoiler.lessons-faq-spoiler
   max-width: 760px
   margin-left: auto
   margin-right: auto
@@ -33,7 +36,7 @@
   flex-direction: row
   justify-content: space-between
   align-items: center
-.spoiler-title.lessons-type-spoiler
+.spoiler-title.lessons-type-spoiler , .spoiler-title.lessons-faq-spoiler
   font-weight: bold
   font-size: 18px
   line-height: 150%
@@ -46,11 +49,12 @@
     font-size: 16px
   @media (max-width: $tablet)
     font-size: 14px
-.spoiler-body.lessons-type-body
+.spoiler-body.lessons-type-body ,.spoiler-body.lessons-faq-body-body
   margin-top: 30px
   font-size: 14px
   line-height: 150%
   display: none
+  width: calc( 100% - 30px )
   @media (max-width: $tablet)
     margin-top: 12px
 .spoiler-body.lessons-type-body-p-title
@@ -62,8 +66,33 @@
   .spoiler-title
     img
       content: url("/img/icon/minus.svg")
-  .spoiler-body.lessons-type-body
+  .spoiler-body.lessons-type-body , .spoiler-body.lessons-faq-body-body
     display: block
     margin-bottom: 12px
-.lessons-type-spoiler-first
+.lessons-type-spoiler-first , .lessons-faq-spoiler-first
   border-top: 1px solid #E0E0E0
+.spoiler-body.lessons-faq-body-body
+  font-weight: normal
+  margin-top: 16px
+  font-size: 14px
+  line-height: 150%
+
+.lessons-faq-title
+  font-weight: bold
+  margin-bottom: 32px
+  margin-top: 60px
+  font-size: 28px
+  margin-left: calc( (100vw - 810px) / 2)
+  @media (max-width: $tablet)
+    margin-left: 73px
+    font-size: 24px
+    margin-bottom: 24px
+    margin-top: 87px
+  @media (max-width: $phone)
+    font-size: 20px
+    margin-top: 56px
+    margin-left: 0px
+.lessons-faq
+  padding-bottom: 56px
+  @media (max-width: $phone)
+    padding-bottom: 36px

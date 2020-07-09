@@ -42,6 +42,12 @@ window.onload = function () {
     if ( $(window).width() < 465 ) {
         $('.lessons-pricing-slider').flickity('destroy')
     }
+    if ( $(window).width() < 465 ) {
+        $('.lessons-reviews-slider').flickity({
+            prevNextButtons: false,
+            cellAlign: 'left',
+        });
+    }
     $('.reviews-slider-container').flickity({
         prevNextButtons: false,
         cellAlign: 'left',
