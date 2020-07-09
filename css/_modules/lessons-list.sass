@@ -1,0 +1,32 @@
+.lessons-list
+  padding-top: 92px
+  @media(max-width: $tablet)
+    padding-top: 70px
+
+.lessons-list-collumn
+  max-width: 47%
+  @media(max-width: $tablet)
+    max-width: 280px
+  @media(max-width: $phone)
+    max-width: 100%
+.lessons-list-collumn > ul
+  list-style: disc
+  font-weight: normal
+  font-size: 16px
+  line-height: 150%
+  margin-left: 16px
+  @media(max-width: $tablet)
+    font-size: 14px
+.lessons-list-collumn > ul > li
+  margin-top: 4px
+  @media(max-width: $phone)
+    margin-top: 2px
+.element.lessons-list
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media(max-width: $phone)
+    flex-direction: column
+.element.lessons-list
+  @media(max-width: $tablet)
+    max-width: 579px
