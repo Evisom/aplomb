@@ -1,0 +1,139 @@
+.lessons-pricing
+  padding-top: 70px
+  .flickity-slider
+    margin-left: calc(  (100vw - 1160px) / 2 ) !important
+  @media (max-width: $tablet)
+    padding-top: 48px
+    .flickity-slider
+      margin-left: 94px !important
+.lessons-pricing-title
+  text-align: center
+  font-weight: bold
+  font-size: 40px
+  @media (max-width: $tablet)
+    font-size: 24px
+    margin-left: 93px
+    text-align: left
+  @media (max-width: $phone)
+    margin-left: 20px
+.lessons-pricing-subtitle
+  font-size: 16px
+  text-align: center
+  margin-top: 12px
+  @media (max-width: $tablet)
+    display: none
+.lessons-pricing-slider
+    margin-top: 45px
+    margin-bottom: 40px
+    @media (max-width: $tablet)
+      margin-top: 24px
+      margin-bottom: 56px
+    @media (max-width: $phone)
+      padding: 0 20px
+      display: grid
+      grid-column-gap: 16px
+      grid-row-gap: 16px
+      grid-template-columns: repeat(2 , 1fr)
+
+.lessons-pricing-slider-element
+  position: relative
+  width: 260px
+  height: 341px
+  background-image: url("/img/background/logo-shadow.svg") !important
+  background-repeat: no-repeat !important
+  background-position-x: right !important
+  background-position-y: top !important
+  margin-right: 40px
+  @media (max-width: $tablet)
+    width: 160px
+    height: 210px
+    background-size: 100px 100px !important
+    margin-right: 20px
+  @media (max-width: $phone)
+    width: 100%
+    height: 200px
+.lessons-pricing-slider-element-title
+  font-weight: bold
+  font-size: 24px
+  line-height: 130%
+  color: white
+  width: 200px
+  position: absolute
+  right: 30px
+  top: 43px
+  @media (max-width: $tablet)
+    font-size: 16px
+    top: 16px
+    left: 16px
+    width: 120px
+.lessons-pricing-slider-element-price
+  position: absolute
+  font-weight: bold
+  font-size: 24px
+  color: white
+  left: 30px
+  top: 130px
+  @media (max-width: $tablet)
+    font-size: 16px
+    top: 73px
+    left: 16px
+.lessons-pricing-slider-element-discount
+  font-weight: bold
+  font-size: 14px
+  line-height: 150%
+  top: 167px
+  left: 30px
+  width: 200px
+  color: white
+  position: absolute
+  @media (max-width: $tablet)
+    font-size: 10px
+    top: 102px
+    left: 16px
+    width: 120px
+.lessons-pricing-slider-element-button
+  position: absolute
+  bottom: 53px
+  height: 40px
+  right: 30px
+  left: 30px
+  display: flex
+  justify-content: center
+  align-items: center
+  font-weight: bold
+  font-size: 14px
+  border: 2px solid #FFFFFF
+  border-radius: 500px
+  color: white
+  @media (max-width: $tablet)
+    top: 160px
+    left: 16px
+    height: 24px
+    font-weight: bold
+    font-size: 9.03226px
+    width: 120px
+    border: 1px solid #FFFFFF
+.lessons-pricing-slider-control
+  background: #FFFFFF
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15)
+  width: 48px
+  height: 48px
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  border-radius: 50%
+  z-index: 1
+  top: 77px
+  @media (max-width: $phone)
+    display: none
+.lessons-pricing-slider-right
+  right:  calc(  ((100vw - 1160px) / 2 ) - 40px ) !important
+  @media (max-width: $desktop)
+    right: 32px !important
+.lessons-pricing-slider-left
+  left: calc(  ((100vw - 1160px) / 2 ) - 24px ) !important
+  @media (max-width: $desktop)
+    left: 32px !important
+  img
+    transform: rotate(180deg)

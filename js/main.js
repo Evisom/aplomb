@@ -33,6 +33,15 @@ window.onload = function () {
         prevNextButtons: false,
         wrapAround: true
     });
+    $('.lessons-pricing-slider').flickity({
+        prevNextButtons: false,
+        cellSelector: ".lessons-pricing-slider-element",
+        pageDots: false,
+        cellAlign: 'left'
+    });
+    if ( $(window).width() < 465 ) {
+        $('.lessons-pricing-slider').flickity('destroy')
+    }
     $('.reviews-slider-container').flickity({
         prevNextButtons: false,
         cellAlign: 'left',
