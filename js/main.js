@@ -78,4 +78,19 @@ window.onload = function () {
     $('.spoiler-title').click(function(){
         $(this).parents('.spoiler').toggleClass("active").find('.spoiler-body')
     })
+    $('.lessons-map-studios-town').click(function(){
+        $('.lessons-map-studios').removeClass('notfound')
+        $(this).parents('.lessons-map-studios').toggleClass("active").find('.lessons-map-result')
+    })
+    $('.lessons-map-search-result-town ').click((event)=> {
+        event.preventDefault()
+        let text = $(event.target).text().trim()
+        $('.lessons-map-studios').removeClass('active')
+        if (text == 'Несуществующий город') {
+            $('.lessons-map-studios').addClass('notfound')
+        } else {
+            $('#mapTown').text(text)
+            $('.lessons-map-result').attr('style', '')
+        }
+    })
 }
