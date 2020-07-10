@@ -33,6 +33,21 @@ window.onload = function () {
         prevNextButtons: false,
         wrapAround: true
     });
+    $('.lessons-pricing-slider').flickity({
+        prevNextButtons: false,
+        cellSelector: ".lessons-pricing-slider-element",
+        pageDots: false,
+        cellAlign: 'left'
+    });
+    if ( $(window).width() < 465 ) {
+        $('.lessons-pricing-slider').flickity('destroy')
+    }
+    if ( $(window).width() < 465 ) {
+        $('.lessons-reviews-slider').flickity({
+            prevNextButtons: false,
+            cellAlign: 'left',
+        });
+    }
     $('.reviews-slider-container').flickity({
         prevNextButtons: false,
         cellAlign: 'left',
@@ -60,4 +75,7 @@ window.onload = function () {
     $( function() {
         $( "#tabs" ).tabs();
     } );
+    $('.spoiler-title').click(function(){
+        $(this).parents('.spoiler').toggleClass("active").find('.spoiler-body')
+    })
 }
