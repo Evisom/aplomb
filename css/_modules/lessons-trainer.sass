@@ -1,0 +1,120 @@
+.lessons-trainer
+  padding-top: 75px
+  @media (max-width: $tablet)
+    padding-top: 56px
+    margin-bottom: 48px
+.lessons-trainer-title
+  font-weight: bold
+  font-size: 40px
+  text-align: center
+  @media (max-width: $tablet)
+    font-size: 24px
+    text-align: left
+    margin-left: 94px
+  @media (max-width: $phone)
+    margin-left: 20px
+.lessons-trainer-container-element:first-child
+  @media (max-width: $tablet)
+    margin-left: 84px
+  @media (max-width: $phone)
+    margin-left: 0
+.lessons-trainer-container
+  display: flex
+  flex-direction: row
+  margin-right: auto
+  margin-left: auto
+  width: fit-content
+  margin-top: 36px
+  @media (max-width: $desktop)
+    overflow-x: scroll
+    width: 100%
+  @media (max-width: $tablet)
+    margin-top: 32px
+  @media (max-width: $phone)
+    margin-top: 24px
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    overflow-x: hidden
+    padding-left: 20px
+    padding-right: 20px
+    grid-row-gap: 44px
+.lessons-trainer-container-element
+  padding: 20px
+  width: 300px
+  position: relative
+  height: 465px
+  flex-shrink: 0
+  img
+    width: 100%
+    height: auto
+  @media (max-width: $tablet)
+    padding: 10px
+    height: 440px
+  @media (max-width: $phone)
+    padding: 8px
+    width: auto
+    height: 360px
+.lessons-trainer-container-element:hover
+  box-shadow: 0px 0px 30px rgba(0, 68, 92, 0.15)
+  @media (max-width: $tablet)
+    box-shadow: none
+  .lessons-trainer-container-element-sm
+    display: flex
+.lessons-trainer-container-element-name
+  font-weight: bold
+  font-size: 18px
+  margin-top: 24px
+  @media (max-width: $phone)
+    font-size: 14px
+    line-height: 150%
+    margin-top: 10px
+    width: 152px
+.lessons-trainer-container-element-trainer
+  font-size: 14px
+  margin-top: 4px
+  @media (max-width: $phone)
+    font-size: 14px
+    margin-top: 2px
+
+.lessons-trainer-container-element-adress
+  font-size: 14px
+  margin-top: 8px
+  line-height: 150%
+  @media (max-width: $phone)
+    margin-top: 8px
+    width: 152px
+.lessons-trainer-container-element-sm
+  display: none
+  align-items: center
+  position: absolute
+  bottom: 36px
+  left: 20px
+  a
+    margin-right: 40px
+    @media (max-width: $phone)
+      margin-right: 24px
+  @media (max-width: $tablet)
+    display: flex
+  @media (max-width: $phone)
+    bottom: 0
+    left: 8px
+.lessons-trainer-container-element-sm-fb:hover
+  svg
+    path
+      fill: #4267B2
+.lessons-trainer-container-element-sm-vk:hover
+  svg
+    path
+      fill: #4680C2
+.lessons-trainer-container-element-sm-ok:hover
+  svg
+    path
+      fill: #ed812b
+.lessons-trainer-container-element-sm-inst:hover
+  svg
+    path
+      fill: #C13584
+
+
+
+
