@@ -1,0 +1,52 @@
+!= partial("/_templates/navbar")
+
+.header-wrapper.header-lessons-wrapper
+    .header.header-lessons
+        .header-title Расписание и залы
+        .header-subtitle Мы помогаем развивать гибкость, силу, баланс взрослым и детям с разным уровнем подготовки для достижений в профессиональной деятельности и в повседневной жизни.
+
+.element-wrapper.lessons-trainers-page-wrapper
+    .element.lessons-trainers-page
+        .vertical-line
+        .lessons-trainers-page-filters
+            .lessons-trainers-page-filters-town
+                select.lessons-trainers-page-filters-town-el
+                    option(disabled , selected="selected") Все города
+                    option Санкт-Петербург
+                    option Москва
+                    option Брянск
+                    option Псков
+                    option Опочка
+                img(src="/img/icon/chevron-down.svg")
+            .lessons-trainers-page-filters-search
+                input.lessons-trainers-page-filters-search-el(placeholder="Поиск по имени")
+                img(src="/img/icon/search-black.svg")
+        .lessons-trainers-page-grid
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+            != partial("/_templates/trainer-card")
+        .lessons-trainers-page-nav
+            .lessons-trainers-page-nav-button Предыдущая страница
+            .lessons-trainers-page-nav-pages
+                a.lessons-trainers-page-nav-pages-a 1
+                a.lessons-trainers-page-nav-pages-a.lessons-trainers-page-nav-pages-a-active 2
+                a.lessons-trainers-page-nav-pages-a 3
+                .lessons-trainers-page-nav-pages-a ...
+                a.lessons-trainers-page-nav-pages-a 14
+            .lessons-trainers-page-nav-button Следующая страница
+
+!= partial("/_templates/footer-moreinfo")
+!= partial("/_templates/footer")

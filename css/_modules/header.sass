@@ -1,6 +1,10 @@
 .header-wrapper
   width: 100%
   min-height: 420px
+  background-repeat: no-repeat
+  background-position: center
+  @media (min-width: 1920px)
+    background-size: 100% !important
 
 .header
   max-width: 1160px
@@ -182,3 +186,15 @@
   min-height: 420px
   @media(max-width: $tablet)
     min-height: unset
+
+
+// EDUCATION HEADER
+
+.education-header-wrapper
+  background-image: url("/img/background/education-header-background.png")
+  background-size: cover
+  @media (max-width: $tablet)
+    height: 189px
+    min-height: unset
+  @media (max-width: $phone)
+    height: 192px

@@ -1,0 +1,151 @@
+.lessons-trainers-page
+  position: relative
+  padding-top: 100px
+  @media (max-width: $laptop)
+    padding-top: 43px
+.lessons-trainers-page-filters-town
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  background: #F2F2F2
+  border-radius: 16px
+  width: 360px
+  height: 40px
+  margin-right: 40px
+  position: relative
+  @media (max-width: $laptop)
+    width: calc(50% - 10px)
+    margin-right: 20px
+  @media (max-width: $phone)
+    width: 100%
+    margin-right: 0
+    margin-bottom: 16px
+  img
+    position: absolute
+    right: 12px
+.lessons-trainers-page-filters-town-el
+  -webkit-appearance: none
+  -moz-appearance: none
+  border: none
+  outline: none
+  background: transparent
+  width: 100%
+  padding-left: 24px
+.lessons-trainers-page-filters-search
+  width: 465px
+  height: 40px
+  background: #F2F2F2
+  border-radius: 16px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  position: relative
+  @media (max-width: $laptop)
+    width: calc(50% - 10px)
+  @media (max-width: $phone)
+    width: 100%
+  img
+    position: absolute
+    right: 16px
+.lessons-trainers-page-filters-search-el::placeholder
+  color: black
+.lessons-trainers-page-filters-search-el
+  width: 100%
+  -webkit-appearance: none
+  -moz-appearance: none
+  background: transparent
+  border: none
+  outline: none
+  padding-left: 30px
+.lessons-trainers-page-filters
+  display: flex
+  flex-direction: row
+  margin-bottom: 24px
+  @media (max-width: $phone)
+    flex-direction: column
+
+.lessons-trainers-page-grid
+  display: grid
+  grid-template-columns: repeat(4 , 1fr)
+  @media (max-width: $laptop)
+    grid-template-columns: repeat(3 , 1fr)
+  @media (max-width: $phone)
+    grid-template-columns: repeat(2 , 1fr)
+    grid-template-rows: auto
+    grid-column-gap: 16px
+  .lessons-trainer-container-element
+    width: auto
+    margin-bottom: -65px
+    height: 450px
+    margin-left: 0
+    img
+      width: 100%
+      height: auto
+    @media (max-width: $laptop)
+      margin-bottom: 16px
+      padding-bottom: 64px
+      .lessons-trainer-container-element-sm
+        bottom: 16px
+        a
+          margin-right: 50%
+      .lessons-trainer-container-element-name
+        font-size: 16px
+        margin-top: 16px
+    @media (max-width: $tablet)
+      height: 390px
+    @media (max-width: $phone)
+      padding: 0
+      height: 350px
+      margin-bottom: 42px
+
+
+      .lessons-trainer-container-element-sm
+        bottom: 0
+        a
+          margin-right: 24px
+      .lessons-trainer-container-element-name
+        font-size: 14px
+  .lessons-trainer-container-element:hover
+    background: white
+    z-index: 1
+
+.lessons-trainers-page-nav
+  margin-top: 80px
+  margin-bottom: 72px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  @media (max-width: $tablet)
+    justify-content: center
+    margin-top: 48px
+    margin-bottom: 48px
+  @media (max-width: $phone)
+    margin-top: 24px
+    margin-bottom: 24px
+
+.lessons-trainers-page-nav-button
+  background: #EDFAFF
+  border-radius: 80px
+  font-size: 14px
+  line-height: 150%
+  padding: 12px 20px
+  @media (max-width: $tablet)
+    display: none
+
+.lessons-trainers-page-nav-pages-a
+  margin-right: 24px
+  font-weight: normal
+  font-size: 14px
+.lessons-trainers-page-nav-pages
+  display: flex
+  flex-direction: row
+  align-items: center
+.lessons-trainers-page-nav-pages-a-active
+  background: #EDFAFF
+  width: 45px
+  height: 45px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
