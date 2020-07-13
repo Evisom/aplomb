@@ -1,0 +1,157 @@
+.education-basic-heading
+  width: 760px
+  padding-top: 100px
+  position: relative
+  @media (max-width: 900px)
+    width: auto !important
+  @media (max-width: $tablet)
+    padding-top: 64px
+.education-basic-heading-wrapper
+  @media (max-width: 900px)
+    padding-left: 95px
+    padding-right: 95px
+  @media (max-width: $phone)
+    padding-left: 20px
+    padding-right: 20px
+.education-basic-heading-title
+  font-weight: bold
+  font-size: 36px
+  line-height: 110%
+  @media (max-width: $tablet)
+    font-size: 24px
+    line-height: 130%
+  @media (max-width: $phone)
+    font-size: 23px
+    line-height: 130%
+    br
+      display: block !important
+.education-basic-heading-subtitle
+  font-weight: normal
+  font-size: 14px
+  line-height: 150%
+  margin-top: 24px
+
+.education-basic-element
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  margin-top: 32px
+  @media (max-width: $desktop)
+    flex-direction: column
+    margin-left: auto
+    margin-right: auto
+    width: 760px
+  @media (max-width: 900px)
+    width: auto !important
+    margin-left: 95px
+    margin-right: 95px
+  @media (max-width: $phone)
+    margin-left: 20px
+    margin-right: 20px
+.education-basic-element-left
+  width: calc((100vw - 760px) / 2 )
+  display: flex
+  justify-content: flex-end
+  z-index: 1
+  p
+    width: 160px
+    text-align: left
+    font-weight: bold
+    font-size: 18px
+    line-height: 150%
+
+  @media (max-width: $desktop)
+    justify-content: flex-start
+    width: 100%
+    p
+      width: 100%
+
+.education-basic-element-content
+  max-width: 760px
+  width: 100%
+  ul
+    list-style: disc
+    margin-left: 16px
+    @media (max-width: $tablet)
+      margin-top: 12px
+  li
+    font-size: 14px
+    line-height: 150%
+
+.education-basic-element-blue
+  @media (max-width: $desktop)
+    width: 100% !important
+    margin-left: 0
+    margin-right: 0
+  .education-basic-element-content
+    background: #EDFAFF
+    padding: 45px  40px
+    width: 100%
+    @media (max-width: $desktop)
+      padding-top: 72px
+      padding-left: 60px !important
+      padding-right: 60px !important
+      padding-bottom: 32px
+      margin-top: -56px
+      max-width: unset
+      width: calc( 100vw - 68px)
+      margin-left: auto
+      margin-right: auto
+    @media (max-width: $tablet)
+      ul
+        margin-top: 0
+    @media (max-width: $phone)
+      width: 100%
+      padding-bottom: 24px
+      padding-left: 20px !important
+      padding-right: 20px !important
+      padding-top: 72px
+  @media (max-width: $desktop)
+    .education-basic-element-left
+      p
+        margin-left: 95px
+        padding-top: 0
+        @media (max-width: $phone)
+          margin-left: 20px
+  .education-basic-element-left
+    p
+      padding-top: 40px
+
+.education-basic-element-certificate
+  margin-left: 40px
+  margin-top: 34px
+  p
+    width: 160px
+    font-size: 14px
+    line-height: 150%
+    margin-top: 25px
+  img
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 6px rgba(0, 0, 0, 0.05), 0px 10px 30px rgba(0, 68, 92, 0.15)
+  @media (max-width: $desktop)
+    display: none
+
+.education-basic-element-content-routes
+  margin-top: 24px
+  display: grid
+  grid-template-columns: repeat(2 , 1fr)
+  grid-column-gap: 40px
+  grid-row-gap: 32px
+  @media (max-width: $tablet)
+    grid-template-columns: 1fr
+    grid-row-gap: 8px
+    .education-basic-element-content-routes-block-text
+      display: inline
+      line-height: 150%
+    .education-basic-element-content-routes-block-title
+      display: inline
+      margin-right: 4px
+      line-height: 150%
+  @media (max-width: $phone)
+    .education-basic-element-content-routes-block-text , .education-basic-element-content-routes-block-title
+      display: block
+  .education-basic-element-content-routes-block
+    font-size: 14px
+  .education-basic-element-content-routes-block-title
+    font-weight: bold
+    margin-bottom: 4px
+    display: inline
