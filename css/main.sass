@@ -20,6 +20,11 @@ body
   height: 100%
   margin: auto
 
+.vertical-line.vertical-line-bottom
+  bottom: -40px !important
+  top: unset
+  @media (max-width: $laptop)
+    bottom: -20px !important
 .vertical-line
   height: 80px
   width: 1px
@@ -31,6 +36,8 @@ body
   @media (max-width: $laptop)
     height: 40px
     top: -20px
+
+
 @media (max-width: $desktop)
   .element-wrapper
     padding-left: 32px

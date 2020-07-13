@@ -93,4 +93,11 @@ window.onload = function () {
             $('.lessons-map-result').attr('style', '')
         }
     })
+    if ( $(window).width() < 465 ) {
+        $('.education-gallery').flickity({
+            prevNextButtons: false,
+            wrapAround: true,
+            cellSelector: '.education-gallery-element',
+        });
+    }
 }
