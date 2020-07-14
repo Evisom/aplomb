@@ -1,0 +1,58 @@
+
+.education-autor
+  max-width: 1280px
+  margin-left: auto
+  margin-right: auto
+  background: #EDFAFF
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  padding-left: 50px
+  padding-top: 83px
+  padding-right: 50px
+  height: 342px
+  margin-bottom: 100px
+  @media (max-width: $desktop)
+    width: calc(100vw - 68px)
+  @media (max-width: $tablet)
+    padding-top: 46px
+    padding-left: 60px
+    padding-right: 60px
+    padding-bottom: 60px
+    height: fit-content
+  @media (max-width: $phone)
+    flex-direction: column
+    padding-top: 32px
+    padding-left: 25px
+    padding-right: 25px
+    padding-bottom: 36px
+    width: calc(100vw - 20px)
+    align-items: center
+    .education-autor-info
+      display: flex
+      flex-direction: column
+      align-items: center
+.education-autor-info-text
+  font-weight: normal
+  font-size: 14px
+  line-height: 150%
+  margin-top: 16px
+  width: 160px
+  @media (max-width: $laptop)
+    width: 140px
+  @media (max-width: $phone)
+    width: 208px
+    text-align: center
+    margin-bottom: 16px
+
+.education-autor-quote
+  font-weight: normal
+  font-size: 18px
+  line-height: 150%
+  margin-left: 40px
+  max-width: 760px
+  @media (max-width: $laptop)
+    font-size: 16px
+  @media (max-width: $phone)
+    text-align: center
+    margin-left: 0
