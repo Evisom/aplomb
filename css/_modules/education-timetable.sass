@@ -1,0 +1,212 @@
+.education-timetable-select
+  height: 52px !important
+  width: 360px !important
+  border-radius: 0 !important
+
+.education-timetable-wrapper
+  @media (max-width: 715px)
+    padding-left: 0
+    padding-right: 0
+.education-timetable-period
+  font-size: 14px
+  line-height: 150%
+  width: 160px
+  margin-right: 40px
+  *
+    display: block
+  .education-timetable-period-text-bold
+    font-weight: bold
+
+.education-timetable-filters
+  display: flex
+  flex-direction: row
+  align-items: center
+  margin-bottom: 32px
+
+.element.education-timetable
+  max-width: 1260px !important
+
+.education-timetable-filters
+  max-width: 1160px
+  margin-left: auto
+  margin-right: auto
+
+.education-timetable-container-spoiler
+  padding-left: 50px
+  padding-right: 50px
+  padding-top: 20px
+  border-top: 1px solid #E0E0E0
+  position: relative
+  padding-bottom: 18px
+  @media (max-width: 715px)
+    padding-left: 20px
+    padding-right: 20px
+.education-timetable-container-spoiler-r1
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  @media (max-width: 715px)
+    flex-direction: column
+
+.education-timetable-container-spoiler1-c1-date
+  font-weight: bold
+  font-size: 16px
+  line-height: 150%
+  @media (max-width: $laptop)
+    font-size: 14px
+    font-weight: normal
+.education-timetable-container-spoiler1-c1
+  display: flex
+  flex-direction: row
+  @media (max-width: $desktop)
+    flex-direction: column
+  @media (max-width: $tablet)
+    margin-right: 12px
+  @media (max-width: 715px)
+    flex-direction: row
+.education-timetable-container-spoiler1-c1-town
+  font-size: 16px
+  line-height: 150%
+  margin-left: 48px
+  @media (max-width: $desktop)
+    margin-left: 0
+  @media (max-width: $laptop)
+    font-size: 14px
+    font-weight: normal
+  @media (max-width: 715px)
+    margin-left: 4px
+.education-timetable-container-spoiler1-c2-name
+  font-weight: bold
+  font-size: 16px
+  line-height: 150%
+  @media (max-width: $laptop)
+    font-size: 14px
+.education-timetable-container-spoiler1-c2-status
+  font-size: 14px
+  line-height: 150%
+  color: #219653
+  @media (max-width: $laptop)
+    font-size: 14px
+    line-height: 150%
+.education-timetable-container-spoiler1-c3-price
+  font-size: 16px
+  line-height: 150%
+  @media (max-width: $laptop)
+    font-size: 14px
+.education-timetable-container-spoiler1-c3-prepay
+  font-size: 14px
+  line-height: 150%
+  @media (max-width: 715px)
+    margin-left: 4px
+.education-timetable-container-spoiler1-c3-button
+  font-size: 14px
+  line-height: 150%
+  color: #00A3DD
+  border: 2px solid #00A3DD
+  border-radius: 24px
+  align-self: center
+  font-weight: bold
+  padding: 8px 41px
+  @media (max-width: $desktop)
+    display: none
+  @media (max-width: 715px)
+    left: 20px
+    bottom: 16px !important
+    right: unset !important
+.education-timetable-container-spoiler1-c2
+  width: 28.5%
+  @media (max-width: $desktop)
+    width: fit-content
+  @media (max-width: $tablet)
+    margin-right: 12px
+.education-timetable-container-spoiler1-c3
+  @media (max-width: 715px)
+    margin-right: 48px
+    flex-direction: row
+    display: flex
+
+.education-showmore-open , .education-showmore-close
+  font-size: 14px
+  line-height: 150%
+  color: #00A3DD
+
+.education-showmore
+  position: absolute
+  left: 50px
+  top: 42px
+  cursor: pointer
+
+.education-showmore
+  *:not(:first-child)
+    display: none
+  @media (max-width: $desktop)
+    top: 24px
+    right: 26px
+    left: auto
+    width: 16px
+    span
+      display: none
+    img
+      display: block !important
+      transform: rotate(90deg)
+.education-timetable-container-spoiler-r2
+  display: none
+.education-timetable-container-spoiler.spoiler.active
+  background: #F7F7F7
+  padding-bottom: 72px
+  .education-timetable-container-spoiler-r2
+    display: flex
+    flex-direction: row
+  .education-showmore
+    top: 268px
+    .education-showmore-close
+      display: block
+    .education-showmore-open
+      display: none
+    @media (max-width: $desktop)
+      top: 24px
+      span
+        display: none !important
+      img
+        content: inherit
+        display: block !important
+        transform: rotate(270deg)
+  @media (max-width: $desktop)
+    padding-bottom: 36px
+    .education-timetable-container-spoiler1-c3-button
+      display: block
+      position: absolute
+      bottom: 36px
+      right: 60px
+  @media (max-width: 715px)
+    padding-bottom: 92px
+
+.education-timetable-container-spoiler-r2-c1-key
+  color: #7c7c86
+.education-timetable-container-spoiler-r2-c1-val
+  margin-bottom: 20px
+.education-timetable-container-spoiler-r2-c1
+  font-size: 14px
+  line-height: 150%
+  margin-top: 24px
+  width: 360px
+  a
+    color: #00A3DD
+    margin-left: 4px
+    margin-right: 2px
+  @media (max-width: $desktop)
+    width: 70%
+  @media (max-width: 715px)
+    width: 100%
+.education-timetable-container-spoiler-r2-c1-key-inline , .education-timetable-container-spoiler-r2-c1-val-inline
+  display: inline
+  margin-right: 4px
+
+.education-timetable-container-spoiler-r2-c2
+  margin-left: 36px
+  max-width: 355px
+  font-size: 14px
+  line-height: 150%
+  margin-top: 24px
+  @media (max-width: $desktop)
+    display: none
