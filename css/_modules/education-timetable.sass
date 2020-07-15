@@ -2,7 +2,16 @@
   height: 52px !important
   width: 360px !important
   border-radius: 0 !important
-
+  @media (max-width: $tablet)
+    border-radius: 16px !important
+    height: 40px !important
+    select
+      font-size: 14px
+  @media (max-width: 600px)
+    width: calc( 100vw - 40px ) !important
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 16px
 .education-timetable-wrapper
   @media (max-width: 715px)
     padding-left: 0
@@ -17,12 +26,61 @@
   .education-timetable-period-text-bold
     font-weight: bold
 
+.education-timetable-page
+  position: relative
+  padding-top: 75px
+  padding-bottom: 18px
+  @media (max-width: $laptop)
+    padding-top: 52px
+
+.education-basic-timetable-title
+  font-weight: bold
+  text-align: center
+  margin-bottom: 32px
+  font-size: 32px
+  line-height: 110%
+  @media (max-width: $laptop)
+    font-weight: bold
+    margin-left: 94px
+    text-align: left
+    font-size: 24px
+    line-height: 130%
+    margin-bottom: 24px
+  @media (max-width: $phone)
+    font-size: 20px
+    line-height: 130%
+    margin-left: 20px
+
+.education-basic-timetable
+  padding-bottom: 86px
+  @media (max-width: $laptop)
+    padding-bottom: 40px
+    .education-timetable-filters
+      display: none
+.education-timetable-container-spoiler.spoiler:last-child
+  border-bottom: 1px solid #E0E0E0
+
+.education-timetable-container-spoiler1-c2-status.red
+  color: red
+
 .education-timetable-filters
   display: flex
   flex-direction: row
   align-items: center
   margin-bottom: 32px
+  @media (max-width: $laptop)
+    .education-timetable-period
+      display: none
+  @media (max-width: 600px)
+    flex-direction: column
 
+
+.education-timetable-container-spoiler1-c3-button.education-timetable-container-spoiler1-c3-button-link
+  text-decoration-line: underline
+  font-size: 14px
+  line-height: 150%
+  border: none
+  font-weight: normal
 .element.education-timetable
   max-width: 1260px !important
 
