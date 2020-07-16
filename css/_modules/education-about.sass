@@ -1,0 +1,165 @@
+.education-about-media-container
+  background: #FFF0F0
+  height: 750px
+  position: relative
+  margin-top: 320px
+  margin-bottom: 450px
+  .education-video-container-el
+    position: sticky
+  .education-gallery-text
+    display: none
+  .education-video-container
+    position: absolute
+    top: -310px
+    left: 0
+    right: 0
+    @media (max-width: $tablet)
+      top: -225px
+    @media (max-width: $phone)
+      top: -160px
+  .education-gallery
+    position: absolute
+    left: 0
+    right: 0
+    top: 266px
+    bottom: auto
+    @media (max-width: $tablet)
+      top: 180px
+    @media (max-width: $phone)
+      top: 135px
+  .education-video-container
+    .vertical-line
+      z-index: 0
+  @media (max-width: $desktop)
+    margin-bottom: calc(100vw / 3 )
+  @media (max-width: $laptop)
+    margin-bottom: calc(100vw / 5 )
+  @media (max-width: $tablet)
+    margin-top: 180px
+    height: 461px
+    margin-bottom: calc(100vw / 3 )
+  @media (max-width: $phone)
+    height: 545px
+    margin-top: 170px
+    margin-bottom: 167px
+
+.header-wrapper.education-header-wrapper.education-header-about
+  margin-bottom: 64px
+  @media (max-width: $tablet)
+    height: 296px
+.education-header-buttons
+  margin-top: 54px
+  display: flex
+  flex-direction: row
+  width: fit-content
+  margin-right: auto
+  margin-left: auto
+  width: 100%
+  justify-content: center
+  padding-left: 32px
+  padding-right: 32px
+  @media (max-width: $tablet)
+    margin-top: 48px
+  @media (max-width: $phone)
+    margin-top: 52px
+    padding-left: 20px
+    padding-right: 20px
+.education-header-buttons-el
+  max-width: 360px
+  font-weight: bold
+  font-size: 16px
+  line-height: 150%
+  height: 52px
+  border: 3px solid #00A3DD
+  box-sizing: border-box
+  border-radius: 4px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  @media (max-width: $laptop)
+    width: 280px
+    min-height: 70px
+    text-align: center
+    padding: 8px 30px
+    height: auto
+  @media (max-width: $phone)
+    font-size: 14px
+    width: calc( ( 100vw - 58px ) / 2 )
+.education-header-buttons-el:first-child
+  margin-right: 40px
+  @media (max-width: $tablet)
+    margin-right: 20px
+  @media (max-width: $phone)
+    margin-right: 16px
+
+.education-about-element
+  margin-top: -32px
+  .education-basic-element-left
+    display: block
+    *
+      display: block
+    @media (max-width: $desktop)
+      display: none
+  .education-basic-element-left-certificate
+    width: fit-content
+    margin-left: auto
+    margin-right: 40px
+  .education-basic-element-content-about-bold , .education-basic-element-content-about-normal
+    width: 160px
+    margin-left: 40px
+  .education-basic-element-left-certificate
+    p
+      font-weight: normal
+      font-size: 14px
+      line-height: 150%
+      margin-top: 25px
+    img
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 0px 6px rgba(0, 0, 0, 0.05), 0px 10px 30px rgba(0, 68, 92, 0.15)
+  .education-basic-element-content-about-bold
+    font-weight: bold
+    font-size: 14px
+    line-height: 150%
+  .education-basic-element-content-about-normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 150%
+    margin-top: 16px
+  p
+    font-weight: normal
+    font-size: 16px
+    line-height: 150%
+    margin-bottom: 25px
+  @media (max-width: $tablet)
+    margin-top: -48px
+    p
+      font-size: 14px !important
+      margin-bottom: 20px
+
+.education-basic-element-content-hidden
+  display: none
+.education-basic-element-content.spoiler.active
+  .education-basic-element-content-hidden
+    display: block
+  .education-basic-element-content-open
+    display: none
+.education-basic-element-content
+  .spoiler-title
+    font-size: 16px
+    line-height: 150%
+    color: #00A3DD
+
+.education-video-container-p
+  position: absolute
+  top: 0
+  left: -200px
+  font-size: 14px
+  line-height: 150%
+  @media (max-width: $desktop)
+    bottom: -32px
+    left: 0
+    top: unset
+
+
+
+

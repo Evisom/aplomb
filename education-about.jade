@@ -1,0 +1,48 @@
+!= partial("/_templates/navbar")
+
+.header-wrapper.education-header-wrapper.education-header-about
+    .header.education-header
+        .header-title Об обучении
+        .header-subtitle Мы помогаем развивать гибкость, силу, баланс взрослым и детям с разным уровнем подготовки для достижений в профессиональной деятельности и в повседневной жизни.
+        .education-header-buttons
+            .education-header-buttons-el Базовый инструкторский курс
+            .education-header-buttons-el Курсы для инструкторов Aplomb
+
+!= partial("/_templates/education-autor")
+
+.education-basic-element.education-about-element
+    .education-basic-element-left.education-basic-element-left-certificate
+        img(src="/img/photo/certificate.png")
+        p Свидетельство Aplomb
+    .education-basic-element-content.spoiler
+            p Cras quis arcu consectetur, suscipit ligula vel, ultricies nulla. Duis a sapien lacus. Aliquam consequat tempus ultricies. Sed dignissim nulla nec tempus sollicitudin. Duis ut elit enim. Ut convallis arcu ac dignissim rhoncus. Suspendisse neque quam, luctus in fringilla quis, ornare at sem. Morbi non varius orci. Proin id dignissim erat, vitae vulputate nunc. Quisque interdum urna velit.
+
+            p Fusce lobortis nulla eros, non fermentum neque convallis eu. Mauris porta id lectus ac malesuada. Cras non imperdiet lectus. Phasellus in pulvinar diam. Nam eleifend diam non ipsum mollis, nec bibendum eros pulvinar. Vestibulum sit amet pellentesque purus, a tincidunt eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis finibus massa vel feugiat tincidunt. Etiam dapibus erat sit amet ante lacinia, vel rhoncus orci consectetur. Vivamus tempor odio velit, ut dapibus purus iaculis nec. Phasellus a lobortis nisl, quis dignissim lorem. Aliquam mattis id quam non egestas. Vivamus sit amet pharetra felis, fermentum pellentesque metus.
+
+            p.spoiler-title.education-basic-element-content-open Узнать подробнее
+            .education-basic-element-content-hidden
+                p Sed in egestas diam, at rhoncus nulla. Cras faucibus pharetra ligula. Fusce fermentum vel lorem a finibus. Vestibulum at nulla eget mi fermentum efficitur non id turpis. Phasellus congue, nisl non sodales tincidunt, mi ante volutpat odio, non pretium arcu ipsum at lacus. Sed posuere, ipsum a euismod feugiat, lectus risus iaculis arcu, sed pretium ipsum odio sit amet dui. Proin pellentesque elementum laoreet. Maecenas nec varius nibh, a mollis dui. Ut vel ex convallis, sollicitudin enim eu, posuere elit. Etiam volutpat mi magna, aliquet sollicitudin ligula facilisis in. Nunc maximus enim et commodo dictum. Fusce dapibus ultrices mi eu sodales.
+
+                p Aliquam eu viverra sapien. Sed nec ligula nunc. Donec semper, justo at malesuada pulvinar, metus lacus lacinia elit, at placerat justo ex et turpis. Aenean tempor vestibulum ex, quis tincidunt eros gravida sodales. Morbi sollicitudin feugiat tincidunt. Proin tristique pretium metus egestas malesuada. Suspendisse rhoncus, enim a porta consectetur, dolor felis malesuada risus, vel luctus risus nisl et neque. In eget fringilla odio.
+
+                p Donec bibendum vel urna non vehicula. Praesent ultricies ligula quis odio tempus imperdiet nec vitae enim. Sed varius est sit amet justo fringilla dictum. Aenean feugiat tellus ante, quis venenatis mauris sagittis vitae. Vestibulum sit amet gravida neque. Cras pellentesque rhoncus neque id interdum. Nulla et tellus venenatis, euismod nisl at, mattis odio. Donec et tincidunt odio.
+                p.spoiler-title.education-basic-element-content-close Свернуть
+    .education-basic-element-left
+        .education-basic-element-content-about-bold Создано профессионалом
+        .education-basic-element-content-about-normal Более 20 летний опыт технологии по выстраиванию сбалансированного тела.
+
+.education-about-media-container
+    .education-video-container
+        .vertical-line
+        .vertical-line.vertical-line-bottom
+        img.education-video-container-el(src="/img/photo/video-preview.png")
+        .education-video-container-p Так проходят курсы
+        a(href="#").education-video-container-play
+            img(src="/img/icon/play.svg")
+    != partial("/_templates/education-gallery")
+
+!= partial("/_templates/reviews-slider")
+
+!= partial("/_templates/faq")
+!= partial("/_templates/footer-moreinfo")
+!= partial("/_templates/footer")
