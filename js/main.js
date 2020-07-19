@@ -29,6 +29,9 @@ window.onload = function () {
     $('.main-block-lessons-slider-container').flickity({
         prevNextButtons: false
     });
+    $('.lessons-about-reviews-slider').flickity({
+        prevNextButtons: false
+    });
     $('.coming-courses-slider').flickity({
         prevNextButtons: false,
         wrapAround: true
@@ -48,15 +51,27 @@ window.onload = function () {
             cellAlign: 'left',
         });
     }
-    $('.reviews-slider-container').flickity({
-        prevNextButtons: false,
-        cellAlign: 'left',
-        pageDots: false,
-        imagesLoaded: true,
-        // draggable: false,
-        cellSelector: '.reviews-slider-container-element',
-        contain: false
-    });
+    if ( $(window).width() < 465 ) {
+        $('.reviews-slider-container').flickity({
+            prevNextButtons: false,
+            cellAlign: 'left',
+            pageDots: false,
+            imagesLoaded: true,
+            draggable: true,
+            cellSelector: '.reviews-slider-container-element',
+            contain: false
+        });
+    } else {
+        $('.reviews-slider-container').flickity({
+            prevNextButtons: false,
+            cellAlign: 'left',
+            pageDots: false,
+            imagesLoaded: true,
+            draggable: false,
+            cellSelector: '.reviews-slider-container-element',
+            contain: false
+        });
+    }
     $('.reviews-slider-container').on( 'change.flickity', function( event, index ) {
         $('.reviews-slider-container').flickity('resize')
     })
@@ -100,4 +115,13 @@ window.onload = function () {
             cellSelector: '.education-gallery-element',
         });
     }
+    $('#coursePopupTrigger').magnificPopup({
+        items: {
+            src: '#coursePopup',
+            type: 'inline'
+        }
+    });
+    $("#courseClose").click(()=> {
+        $.magnificPopup.instance.close()
+    })
 }
