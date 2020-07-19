@@ -7,7 +7,7 @@
             |инструкторский курс
         .header-subtitle Мы помогаем развивать гибкость, силу, баланс взрослым и детям с разным уровнем подготовки для достижений в профессиональной деятельности и в повседневной жизни.
         .header-main-info-buttons
-            a.header-button-blue(href="#") Расписание занятий
+            a.header-button-blue(href="#")#coursePopupTrigger Записаться
 .element-wrapper.education-basic-heading-wrapper
     .element.education-basic-heading
         .vertical-line
@@ -97,5 +97,22 @@
 != partial("/_templates/education-gallery")
 
 != partial("/_templates/faq")
+.course-form.course-form-page
+    .course-form-title Ближайший курс — 2–6 декабря.
+    .course-form-subtitle Бронирование места осуществляется по предоплате 6 000 ₽.
+    .course-form-el
+        input(placeholder="Введите имя и фамилию")
+    .course-form-el
+        input(placeholder="Введите имя и фамилию")
+    .course-form-el
+        input(placeholder="Введите имя и фамилию")
+    .couse-form-checkbox-container
+        input.couse-form-checkbox-container-el(type="checkbox")
+        .couse-form-checkbox-container-p Нажимая на кнопку, вы соглашаетесь с Правилами и условиями регистрации на курс и соглашаетесь c
+            a.couse-form-checkbox-container-a политикой конфиденциальности
+    .course-control
+        .course-button Оплатить — 30 000 ₽
+        .course-prepay Или внесите предоплату —
+            span 6 000 ₽
 != partial("/_templates/footer-moreinfo")
 != partial("/_templates/footer")

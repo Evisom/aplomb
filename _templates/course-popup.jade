@@ -1,0 +1,23 @@
+.course-form#coursePopup
+    img.course-form-close#courseClose(src="/img/icon/close.svg")
+    .course-form-title Ближайший курс — 2–6 декабря.
+    .course-form-subtitle Бронирование места осуществляется по предоплате 6 000 ₽.
+    .course-form-el-select
+        select
+            option(disabled , selected="selected") 1
+            option 2
+            option 3
+            option 4
+            option 5
+    .course-form-el
+        input(placeholder="Введите имя и фамилию")
+    .course-form-el(style="outline: 1px solid red")
+        input(placeholder="Введите имя и фамилию")
+    .couse-form-checkbox-container
+        input.couse-form-checkbox-container-el(type="checkbox")
+        .couse-form-checkbox-container-p Нажимая на кнопку, вы соглашаетесь с Правилами и условиями регистрации на курс и соглашаетесь c
+            a.couse-form-checkbox-container-a политикой конфиденциальности
+    .course-control
+        .course-button Оплатить — 30 000 ₽
+        .course-prepay Или внесите предоплату —
+            span 6 000 ₽

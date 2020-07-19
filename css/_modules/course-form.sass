@@ -1,0 +1,157 @@
+.course-form
+  width: 760px
+  background: #CCE8F3
+  padding: 60px 50px
+  margin: auto
+  position: relative
+  z-index: 1
+  display: none
+  @media (max-width: $tablet)
+    padding: 50px 94px
+    width: 100%
+  @media (max-width: $phone)
+    padding: 20px 30px
+.course-form.course-form-page
+  margin-bottom: -125px
+.course-form  + .footer-moreinfo-wrapper
+  height: 445px
+  .footer-moreinfo
+    padding-top: 170px
+
+.course-form.course-form-page
+  display: block
+.course-form-title
+  font-weight: bold
+  font-size: 28px
+  line-height: 130%
+  @media (max-width: $tablet)
+    font-size: 24px
+.course-form-subtitle
+  font-size: 14px
+  line-height: 150%
+  margin-top: 12px
+  margin-bottom: 42px
+
+.course-form-el
+  width: 100%
+  background: #FFFFFF
+  height: 52px
+  margin-top: 14px
+  input
+    width: 100%
+    height: 100%
+    outline: none
+    border: none
+    padding-left: 16px
+
+
+.couse-form-checkbox-container
+  display: flex
+  flex-direction: row
+  align-items: start
+  margin-top: 16px
+a.couse-form-checkbox-container-a
+  color: #00A3DD
+
+.couse-form-checkbox-container-p
+  font-size: 14px
+  line-height: 150%
+  margin-left: 12px
+
+input.couse-form-checkbox-container-el
+  width: 20px
+  flex-shrink: 0
+  height: 20px
+  margin-top: 4px
+  border: 1px solid #E0E0E0
+  border-radius: 4px
+  background: white
+  -moz-appearance: none
+  -webkit-appearance: none
+  -o-appearance: none
+
+input.couse-form-checkbox-container-el:checked
+  background-image: url("/img/icon/checkbox.svg")
+  background-repeat: no-repeat
+  background-position: center center
+
+.course-control
+  margin-top: 24px
+  display: flex
+  flex-direction: row
+  align-items: center
+  @media (max-width: $phone)
+    flex-direction: column
+    align-items: baseline
+
+.course-button
+  font-weight: bold
+  font-size: 14px
+  line-height: 150%
+  color: #FFFFFF
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 240px
+  height: 52px
+  background: #00A3DD
+
+.course-prepay
+  font-weight: bold
+  font-size: 14px
+  line-height: 150%
+  margin-left: 60px
+  span
+    color: #00A3DD
+    margin-left: 4px
+  @media (max-width: $phone)
+    margin-left: 0
+    margin-top: 28px
+    margin-bottom: 12px
+
+.mfp-wrap
+  .course-form
+    display: block
+    position: fixed
+    left: 0
+    right: 0
+    height: fit-content
+    top: 0
+    bottom: 0
+    z-index: 999
+  .mfp-preloader
+    display: none
+.mfp-bg
+  position: fixed
+  background: rgba(0,0,0,0.3)
+  height: 100vh
+  left: 0
+  right: 0
+  bottom: 0
+  top: 0
+.mfp-close
+  display: none
+.course-form-close
+  position: absolute
+  right: 24px
+  top: 24px
+
+.course-form-el-select
+  width: 100%
+  height: 52px
+  background: white
+  select
+    width: calc(100% - 16px)
+    background-image: url("/img/icon/chevron-down.svg")
+    background-repeat: no-repeat
+    background-position-y: center
+    background-position-x: right
+    height: 100%
+    border: none
+    outline: none
+    padding-left: 16px
+    padding-right: 16px
+    color: #7C7C86
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
