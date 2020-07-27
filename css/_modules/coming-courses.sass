@@ -67,3 +67,13 @@
     font-weight: normal
 .coming-courses-slider-element.is-selected > *
   color: black
+.coming-courses-slider
+  .lessons-pricing-slider-control
+    display: none
+@media(min-width: 1200px )
+  .coming-courses-slider-element.is-selected + div > *
+    color: black
+  .coming-courses-slider
+    .lessons-pricing-slider-control
+      top: 102px !important
+      display: flex

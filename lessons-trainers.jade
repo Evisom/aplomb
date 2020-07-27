@@ -19,8 +19,13 @@
                     option Опочка
                 img(src="/img/icon/chevron-down.svg")
             .lessons-trainers-page-filters-search
-                input.lessons-trainers-page-filters-search-el(placeholder="Поиск по имени")
+                input.lessons-trainers-page-filters-search-el#lessonsTrainersInput(placeholder="Поиск по имени")
                 img(src="/img/icon/search-black.svg")
+                .lessons-trainers-page-filters-search-hints#lessonsTrainersInputHints
+                    a.lessons-trainers-page-filters-search-hints-a(href="#") Елизавета Краснова
+                    a.lessons-trainers-page-filters-search-hints-a(href="#") Елизавета Краснова
+                    a.lessons-trainers-page-filters-search-hints-a(href="#") Елизавета Краснова
+                    a.lessons-trainers-page-filters-search-hints-a(href="#") Елизавета Краснова
         .lessons-trainers-page-grid
             != partial("/_templates/trainer-card")
             != partial("/_templates/trainer-card")

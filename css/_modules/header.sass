@@ -92,6 +92,13 @@
   color: black
   border: 2px solid #00A3DD
 // MAIN PAGE HEADER
+.header-main-br
+  @media (max-width: $tablet)
+    display: none
+
+.header-main-info-title
+  span
+    margin-right: 10px
 
 .header-wrapper.header-main-wrapper
   background-image: url("/img/background/main.png")
@@ -99,7 +106,7 @@
   height: 650px
   background-position: center
   @media (min-width: 1920px)
-    background-size: 100% !important
+    background-size: cover !important
   @media (max-width: $desktop)
     padding-left: 30px
     padding-right: 30px

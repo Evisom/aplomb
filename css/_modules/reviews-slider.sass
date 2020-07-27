@@ -48,6 +48,7 @@
   height: 325px
   width: 260px
   margin-left: 40px
+
   .reviews-slider-container-element-info
     display: none
   @media (max-width: $desktop)
@@ -70,6 +71,7 @@
   position: relative
   width: 760px
   justify-content: flex-end
+
   img
     height: 450px !important
     width: 360px !important
@@ -80,11 +82,12 @@
       width: 220px !important
       height: 275px !important
   @media (max-width: 700px)
-    width: 260px
+    width: 231px
     height: 289px
     img
-      width: 260px !important
-      height: 289px!important
+      width: 231px !important
+      height: auto !important
+
   .reviews-slider-container-element-info
     position: absolute
     display: block
@@ -95,12 +98,10 @@
       right: 140px
     @media (max-width: 700px)
       top: 320px
-      //width: 100%
-      //right: 0px
       width: calc( 100vw - 40px )
-      right: calc(( 100vw - 300px ) / -1)
+      right: calc(( 100vw - 272px ) / -1)
 .reviews-slider-container-element-info-quote
-  font-weight: bold
+  font-weight: normal
   font-size: 30px
   line-height: 110%
   width: 460px

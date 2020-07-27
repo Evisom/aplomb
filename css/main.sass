@@ -9,7 +9,8 @@ $phone: 480px
 a
   text-decoration: none
   color: initial
-
+html
+  margin-right: 0 !important
 body
   overflow-x: hidden
 
@@ -36,8 +37,29 @@ body
   @media (max-width: $laptop)
     height: 40px
     top: -20px
+.mfp-bg
+  z-index: 11
+.mfp-wrap
+  width: 100%
+.mfp-iframe
+  width: 760px
+  height: 430px
+  margin: auto
+  z-index: 999
+.mfp-wrap
+  z-index: 999
+  position: fixed !important
+  text-align: center
+  height: auto !important
+  top: 0 !important
+  bottom: 0 !important
+  display: flex
+  flex-direction: column
+  justify-content: center
 
-
+.mfp-iframe-scaler
+  width: fit-content
+  margin: auto
 @media (max-width: $desktop)
   .element-wrapper
     padding-left: 32px

@@ -6,6 +6,9 @@
   right: 0
   top: 0
   z-index: 10
+.navbar-up
+  animation-duration: 0.7s
+  animation-name: navbar
 .navbar
   max-width: 1160px
   height: 100%
@@ -16,6 +19,26 @@
   align-items: center
 .navbar-menu
   display: none
+.navbar-scroll
+  animation-duration: 0.7s
+  animation-name: navbarscroll
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+  background-color: rgba(255,255,255,1)
+@keyframes navbar
+  from
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+    background-color: rgba(255,255,255,1)
+  to
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0)
+    background-color: rgba(255,255,255,0)
+@keyframes navbarscroll
+  from
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.0)
+    background-color: rgba(255,255,255,0.0)
+  to
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+    background-color: rgba(255,255,255,1)
+
 .navbar-logo
   position: absolute
   top: 20px
@@ -144,14 +167,19 @@
       flex: 0 0 auto
       margin-right: 20px
       padding: 24px
+    .navbar-menu-slider-element:first-child
+      margin-left: 24px
+    navbar-menu-slider-element:last-child
+      margin-right: 24px
     .navbar-menu-slider
       flex-wrap: nowrap
       margin-top: 64px
-      width: calc(100vw - 24px)
+      width: 100vw
       overflow-x: scroll
       display: flex
       white-space: nowrap
       flex-direction: row
+      margin-left: -24px
     .navbar-menu
       z-index: 10
       display: flex
