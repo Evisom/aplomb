@@ -37,17 +37,17 @@ window.onload = function () {
     $('.lessons-about-reviews-slider').flickity({
         prevNextButtons: false
     });
-    if ( $(window).width() > 1200 ) {
+    if ( $(window).width() > 1200 ||  $(window).width() < 480 ) {
         $('.coming-courses-slider').flickity({
             prevNextButtons: false,
-            wrapAround: true,
+
             cellAlign: 'left',
             cellSelector: ".coming-courses-slider-element",
         });
     } else {
         $('.coming-courses-slider').flickity({
             prevNextButtons: false,
-            wrapAround: true,
+            cellAlign: 'center',
             cellSelector: ".coming-courses-slider-element",
         });
     }
@@ -156,5 +156,9 @@ window.onload = function () {
     })
     $("#lessonsTrainersInput").focusout(()=>{
         $("#lessonsTrainersInputHints").hide()
+    })
+    $('.education-gallery').flickity('resize')
+    $('.education-gallery').on( 'change.flickity', function( event, index ) {
+        $(this).flickity('resize')
     })
 }
